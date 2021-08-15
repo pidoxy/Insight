@@ -1,0 +1,21 @@
+{% extends "groups/base.html" %}
+
+{% load static %}
+{% load bootstrap4 %}
+
+{% block maincontent %}
+<div class="login__container d-flex flex-md-row flex-column my-5 py-md-5">
+    <div class="login__img col-md-5 text-center" >
+        <img class="" src="{% static 'images/login.svg' %}" alt="login icon">
+    </div>
+    <div class="login__form m-auto col-md-6 mx-3">
+        <h1 class="teal py-5 text-center">New group</h1>
+        <form method="POST">
+            {% bootstrap_form form %}
+            {% csrf_token %}
+            <button class="mx-auto mt-1 btn purple__bg white" type="submit">Empower Learning</button>
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock maincontent %}

@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 
     'bootstrap4',
 
-
+    'groups',
 ]
 
 AUTHENTICATION_BACKENDS = [
@@ -88,6 +88,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
+SITE_ID = 1
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -155,4 +156,4 @@ STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# LOGIN_REDIRECT_URL = "dashboard:index"
+LOGIN_REDIRECT_URL = "index"

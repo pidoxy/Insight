@@ -1,0 +1,38 @@
+{% extends "groups/base.html" %}
+{% load static %}
+
+{% block maincontent %}
+  
+{% include "landing/snippets/nav.html" %}
+
+
+
+  <img class="grad" src="{% static 'images/grad.svg' %}" alt="gradimg">
+
+  <!-- SVG End-->
+
+  <!-- Lessons Tab -->
+ 
+
+  
+  <div class="main__cards">
+    {% for item in group.groupposts.all %}
+    <div class="card">
+      <i
+        class="fa fa-user-o fa-2x text-lightblue"
+        aria-hidden="true"
+      ></i>
+      <div class="card_inner">
+        <video width="320" height="70" controls poster="">
+          </video>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+ 
+
+
+
+
+
+{% endblock maincontent %}
