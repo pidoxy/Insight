@@ -46,6 +46,12 @@ class DetailGroup(LoginRequiredMixin, UserPassesTestMixin, DetailView):
     template_name = 'groups/group_detail.html'
     model = models.Group
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['post_form'] = forms.createpostform
+
+        return context
+
     def test_func(self):
         if self.request.user not in self.get_object().ban.all():
             return True 

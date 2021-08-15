@@ -42,6 +42,6 @@ class createpostform(forms.ModelForm):
 
     class Meta():
         model = models.GroupPost
-        fields = ('content', 'image')
+        fields = ('content', 'video')
 
 
