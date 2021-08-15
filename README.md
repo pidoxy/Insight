@@ -65,8 +65,8 @@
 - Django
 - Django-allauth 
 
-# [Click Here for more Info](https://bit.ly/3xL8OxI)
-# [Try Out Our Website]()
+# [Click Here for more Info]()
+# [Try Out Our Website](insight-edu.netlify.app)
 # [Demo Video]()
 
 
