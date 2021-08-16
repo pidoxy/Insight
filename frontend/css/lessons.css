@@ -1,0 +1,67 @@
+body{
+    background-image: url('Plus.png');
+background-size: cover;
+background-position: center center;
+min-height: 80vh;
+background-repeat: no-repeat;
+font-family: 'Nunito', sans-serif;
+padding: 0;
+}
+
+
+
+nav{
+    background-color: #6930C3;
+    
+    
+}
+
+.navbar-brand{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-link{
+    font-family:'Nunito', sans-serif;
+    color: white;
+    margin-top: 35px;
+    font-size: 1rem;
+
+    margin-right: 50px;
+}
+.grad{
+    position: relative;
+    left: 25%;
+    bottom: 70px;
+}
+
+.main__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 70px 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+    padding: 25px;
+    border-radius: 5px;
+    background: #EEEEEE;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+    transition: .2s ease-in ;
+  }
+  .card:hover{
+    height: 100px;
+  }
+  .card_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card_inner > span {
+    font-size: 25px;
+  }
